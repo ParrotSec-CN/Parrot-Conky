@@ -1,12 +1,12 @@
 ## 安装依赖和lua
 **安装依赖**
+
 `sudo apt install libreadline-dev -y`
 
 **这个小功能基于lua，所以先安装lua**
 
-**[官网](https://www.lua.org/download.html)下载lua**
+**[官网](https://www.lua.org/download.html)下载并解压lua压缩包**
 
-**下载并解压lua压缩包**
 `wget https://www.lua.org/ftp/lua-x.x.x.tar.gz && tar -zxvf lua-x.x.x.tar.gz`
 
 **进入lua文件夹，测试，编译，安装**
@@ -42,6 +42,7 @@ cp /usr/share/applications/conky-start.desktop ~/Desktop
 *git clone 库之后*
 
 **[官方Parrot-Conky_v2.0](https://dev.parrotsec.org/parrot/parrot-conky)给出的建议是安装conky-manager**
+
 `sudo apt install conky-manager -y`
 
 **之后启动conky-manager**
@@ -73,7 +74,7 @@ sudo mv ./usr/share/fonts/truetype/future/ /usr/share/fonts/truetype/
 
 *每次你想改lua主题和config配置文件的时候，你需要在两个文件夹来回切换着改… …*
 
-## conky新语法
+## Conky新语法
 `sudo ln -sf /usr/local/bin/lua /usr/bin/lua`
 
 `sudo chmod +x /usr/share/doc/conky-all/convert.lua`
@@ -87,4 +88,4 @@ sudo mv ./usr/share/fonts/truetype/future/ /usr/share/fonts/truetype/
 
 *目前新配置文件修改了parrot-conky的大小，以及lua脚本的一些参数，可能存在些许问题*
 
-*切换之前提交的commits*
+*如需切换之前配置文件，请自行查找之前提交的commits*
