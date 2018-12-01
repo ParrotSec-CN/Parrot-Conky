@@ -49,6 +49,7 @@ cp /usr/share/applications/conky-start.desktop ~/Desktop
 **里面会有一个默认给的主题，如果想用的话，直接点Themes，然后在主题前面打√，就会启用**
 
 *如何启用Parrot-conky*
+
 **点击右上角类似控制器的按钮，然后点Locations，再点add，选择你克隆的conky库里面的conky文件夹**
 
 **然后重启conky-manager，你会发现在Widgets里面有个conky.config的文件，直接打√就会启用(此时启用是没有任何有用的效果的)**
@@ -61,13 +62,29 @@ sudo mv ./usr/share/fonts/truetype/future/ /usr/share/fonts/truetype/
 ```
 
 **设置开机自启**
+
 *点击General，开启即可*
+
 ![](https://i.postimg.cc/FsZ3YQTP/20181025193403.png)
 
 **conky-manager可以安装一些主题包，不过需要各位去下载了，目前我没有收集**
 
-*弊端：*每次你想改lua主题和config配置文件的时候，你需要在两个文件夹来回切换着改… …
+*弊端：*
+
+*每次你想改lua主题和config配置文件的时候，你需要在两个文件夹来回切换着改… …*
+
+## conky新语法
+`sudo ln -sf /usr/local/bin/lua /usr/bin/lua`
+
+`sudo chmod +x /usr/share/doc/conky-all/convert.lua`
+
+`/usr/share/doc/conky-all/convert.lua conky.conf`
 
 ## 存在问题
 *解决非sudo启动conky不显示发行版本号和/home的磁盘使用情况 --> 就是使用sudo啦*
+
 `sudo conky`
+
+*目前新配置文件修改了parrot-conky的大小，以及lua脚本的一些参数，可能存在些许问题*
+
+*切换之前提交的commits*
