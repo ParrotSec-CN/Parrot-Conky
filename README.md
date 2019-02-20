@@ -1,3 +1,5 @@
+![](https://i.postimg.cc/g0f2X0Dv/ParrotOS.png)
+
 ## 安装依赖和lua
 **安装依赖**
 
