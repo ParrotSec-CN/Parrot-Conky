@@ -6,7 +6,7 @@
 
   `sudo apt install libreadline-dev -y`
 
-* **这个小功能基于lua，所以先安装lua**
+* **这个Conky的样式渲染基于lua，所以要安装lua**
 
 * **[官网](https://www.lua.org/download.html)下载并解压lua压缩包**
 
@@ -79,7 +79,7 @@
 
 * *弊端：*
 
-* *每次你想改lua主题和config配置文件的时候，你需要在两个文件夹来回切换着改… …*
+  *每次你想改lua主题和config配置文件的时候，你需要在两个文件夹来回切换着改… …*
 
 > Conky新语法
 
