@@ -3,6 +3,7 @@
 > 安装依赖和lua
 
 * **安装依赖**
+
   `sudo apt install libreadline-dev -y`
 
 * **这个小功能基于lua，所以先安装lua**
@@ -47,6 +48,7 @@
 * *git clone 库之后*
 
 * **[官方Parrot-Conky_v2.0](https://dev.parrotsec.org/parrot/parrot-conky)给出的建议是安装conky-manager**
+
   `sudo apt install conky-manager -y`
 
 * **之后启动conky-manager**
@@ -55,11 +57,12 @@
 
 * *如何启用Parrot-conky*
 
-* **点击右上角类似控制器的按钮，然后点Locations，再点add，选择你克隆的conky库里面的conky文件夹**
+  **点击右上角类似控制器的按钮，然后点Locations，再点add，选择你克隆的conky库里面的conky文件夹**
 
-* **然后重启conky-manager，你会发现在Widgets里面有个conky.config的文件，直接打√就会启用(此时启用是没有任何有用的效果的)**
+  **然后重启conky-manager，你会发现在Widgets里面有个conky.config的文件，直接打√就会启用(此时启用是没有任何有用的效果的)**
 
-* *所以需要把库里的parrot.png和rings.lua复制到/etc/conky*
+  *所以需要把库里的parrot.png和rings.lua复制到/etc/conky*
+
   ```
   sudo cp -r ./etc/conky/*  /etc/conky/
 
@@ -67,7 +70,9 @@
   ```
 
 * **设置开机自启**
+
   *点击General，开启即可*
+
   ![](https://i.postimg.cc/FsZ3YQTP/20181025193403.png)
 
 * **conky-manager可以安装一些主题包，不过需要各位去下载了，目前我没有收集**
@@ -87,6 +92,7 @@
 > 存在问题
 
 * *解决非sudo启动conky不显示发行版本号和/home的磁盘使用情况 --> 就是使用sudo啦*
+
   `sudo conky`
 
 * *目前新配置文件修改了parrot-conky的大小，以及lua脚本的一些参数，可能存在些许问题*
