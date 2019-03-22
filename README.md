@@ -8,6 +8,7 @@
 * **这个小功能基于lua，所以先安装lua**
 
 * **[官网](https://www.lua.org/download.html)下载并解压lua压缩包**
+
   `wget https://www.lua.org/ftp/lua-x.x.x.tar.gz && tar -zxvf lua-x.x.x.tar.gz`
 
 * **进入lua文件夹，测试，编译，安装**
