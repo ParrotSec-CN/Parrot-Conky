@@ -1,4 +1,4 @@
-![](https://i.postimg.cc/g0f2X0Dv/ParrotOS.png)
+![](https://i.postimg.cc/3Rh9dL8s/Parrot-OS-2019-07-08-19-35-20.png)
 
 > 安装依赖和lua
 
@@ -10,11 +10,12 @@
 
 * **[官网](https://www.lua.org/download.html)下载并解压lua压缩包**
 
-  `wget https://www.lua.org/ftp/lua-x.x.x.tar.gz && tar -zxvf lua-x.x.x.tar.gz`
+  `wget https://www.lua.org/ftp/lua-5.3.5.tar.gz && tar -zxvf lua-5.3.5.tar.gz`
 
 * **进入lua文件夹，测试，编译，安装**
+
   ```
-  cd lua-x.x.x
+  cd lua-5.3.5
 
   sudo make linux test && sudo make linux && sudo make install
   ```
@@ -26,6 +27,7 @@
 * `sudo apt install conky-all -y`
 
 * **克隆本项目，按相应位置移动**
+
   ```
   #  备份原有conf配置文件
   sudo mv /etc/conky/conky.conf /etc/conky/conky.conf.bak
@@ -42,7 +44,13 @@
 
   # 可以选择把applications里面的图标拷贝到桌面
   cp /usr/share/applications/conky-start.desktop ~/Desktop
+
   ```
+
+* **启动Conky**
+
+  `sudo conky`
+
 > 【方案二、】官方的一些步骤
 
 * *git clone 库之后*
@@ -95,7 +103,7 @@
 
   `sudo conky`
 
-* *目前新配置文件修改了parrot-conky的大小，以及lua脚本的一些参数，可能存在些许问题*
+* *目前新配置文件修改了parrot-conky的大小，网速展示仅修改了eth0，以及lua脚本的一些参数，可能存在些许问题*
 
 * *如需切换之前配置文件，请自行查找之前提交的commits*
 
